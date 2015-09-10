@@ -1,0 +1,54 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * AppBundle\Entity\Post
+ *
+ * @ORM\Table(name="post")
+ * @ORM\Entity
+ */
+class Post {
+
+    /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * The ordered product
+     * @var Autor
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumn(name="autor", referencedColumnName="id")
+     * */
+    private $autor;
+
+    /**
+     * @ORM\Column(name="cadencia", type="integer")
+     */
+    private $cadencia;
+
+    /**
+     * @ORM\Column(name="fechaEntrega", type="date")
+     */
+    private $fechaEntrega;
+
+    /**
+     * @ORM\Column(name="titulo", type="string", nullable=true)
+     */
+    private $titulo;
+
+    /**
+     * @ORM\Column(name="acabado", type="boolean")
+     */
+    private $acabado;
+
+
+
+}

@@ -1,0 +1,18 @@
+easy_admin:
+    site_name: 'eina BLOG'
+    entities:
+        Post:
+            class: AppBundle\Entity\Post
+            
+            list:
+                title: list.title
+                max_results: 30
+                actions:
+                    - { name: 'show', icon: 'search', label: '' }
+                    - { name: 'edit', icon: 'pencil', label: '' }
+                    
+        User:
+            class: AppBundle\Entity\User
+            list:
+                title: user.title
+                max_results: 30
