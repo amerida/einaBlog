@@ -3,7 +3,6 @@ easy_admin:
     entities:
         Post:
             class: AppBundle\Entity\Post
-            
             list:
                 title: list.title
                 max_results: 30
@@ -12,6 +11,7 @@ easy_admin:
                     - { name: 'edit', icon: 'pencil', label: '' }
                     
         User:
+            label: 'Usuarios'
             class: AppBundle\Entity\User
             list:
                 title: user.title
