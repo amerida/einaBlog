@@ -8,11 +8,4 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller {
 
-//    /**
-//     * @Route("/", name="homepage")
-//     */
-//    public function indexAction(Request $request) {
-//        return $this->redirect('http://www.grupeina.com/es/');
-//    }
-
 }
