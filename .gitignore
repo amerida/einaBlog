@@ -35,3 +35,7 @@
 
 # Composer PHAR
 /composer.phar
+
+# Capifopny files
+/app/config/*.rb
+/Capfile
