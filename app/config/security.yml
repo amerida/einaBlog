@@ -8,7 +8,7 @@ security:
             memory:
                 users:
                     grupeina:
-                        password: 2cc06a2d7016c4c311e8c69c12ba4a87 #Blog015
+                        password: 2cc06a2d7016c4c311e8c69c12ba4a87
                         roles: 'ROLE_ADMIN'
                         
    
